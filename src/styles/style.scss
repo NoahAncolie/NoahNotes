@@ -1,0 +1,119 @@
+$main : #23CE6B;
+$dark : #272D2D;
+$light : #F6F8FF;
+$purple : #A846A0;
+$grey : #50514F;
+
+@mixin inputVariables {
+    width: 90%;
+    padding : 10px 1.5%;
+    margin: 2% 2% 0 2%;
+    background-color: $grey;
+    border: none;
+}
+
+#root {
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding : 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $dark;
+    color : $light;
+}
+
+h1 {
+    font-family: 'Roboto Flex', sans-serif;
+    color : $main;
+}
+
+.noteApp {
+    width : 100vw;
+    height : 100vh;
+    display : flex;
+}
+
+.noteBtn {
+    background-color: $main;
+    padding: 10px;
+    border-radius: 3px;
+    color: $dark;
+    border: none;
+}
+
+.notes {
+    width: 24.7vw;
+    border-right: 0.3vw solid $light;
+    margin: 2%;
+}
+
+.note {
+    width: 75vw;
+}
+
+.noteTable {
+    height: 60vh;
+}
+
+.noteTitleInput {
+    @include inputVariables
+}
+
+.noteTextArea {
+    height: 33vh;
+    @include inputVariables
+}
+
+.saveBtn {
+    padding: 10px 40px;
+    margin : 2%
+}
+
+.noteVisual {
+    overflow-y: auto;
+    scrollbar-color: $main transparent;
+    background-color: transparent;
+    padding: 0;
+    width: 93%;
+    margin: 4vh 0 0 2%;
+    height: 35vh;
+}
+
+.bottomList {
+    margin-top: 2%;
+    overflow-y: auto;
+    scrollbar-color: $main transparent;
+    max-height: 80vh;
+}
+
+input:focus, textarea:focus {
+    outline : $main solid;
+    outline-offset: -3px;
+    border-radius: 3px;
+}
+
+.notePreview {
+    margin-top: 2vw;
+    margin-right: 2vw;
+}
+
+button {
+    width: 90%;
+    font-weight: 800;
+    font-size: x-large;
+}
+
+.hide {
+    transform: translateY(100%);
+}
+
+.slide-in {
+    animation: 0.5s slideIn ease-in-out;
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(100%); }
+    100% { }
+}
