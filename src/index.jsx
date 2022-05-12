@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactDom from 'react-dom'
-import { useState } from 'react'
 import Notes from './components/Notes'
 import Note from './components/Note'
 import './styles/style.scss'

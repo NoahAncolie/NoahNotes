@@ -3,7 +3,6 @@ import React from "react";
 const NoteTable = (props) => {
 
     let currentNote = props.currentNote
-    let noteTable = props.noteTable
 
     const saveNote = () => {
         let local = JSON.parse(localStorage.myNotes)
@@ -29,7 +28,7 @@ const NoteTable = (props) => {
     }
 
     return (
-        <div className={`noteTable ${noteTable}`}>
+        <div className={`noteTable ${props.noteTable}`}>
             <form onSubmit={saveNote}>
                 <input type="text" className="noteTitleInput" placeholder="Ajouter une note pour commencer à taper" onChange={event => editNoteTitle(event.target.value)} value={currentNote.title? currentNote.title.split('# ').join('') : ""}></input>
                 <textarea className="noteTextArea" placeholder="Type in..." value={currentNote.content? currentNote.content : ""} onChange={event => editNoteText(event.target.value)}>{currentNote.content}</textarea>
