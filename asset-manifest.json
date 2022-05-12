@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NoahNotes/static/css/main.4bc0ba43.css",
+    "main.js": "/NoahNotes/static/js/main.784751c2.js",
+    "index.html": "/NoahNotes/index.html",
+    "main.4bc0ba43.css.map": "/NoahNotes/static/css/main.4bc0ba43.css.map",
+    "main.784751c2.js.map": "/NoahNotes/static/js/main.784751c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4bc0ba43.css",
+    "static/js/main.784751c2.js"
+  ]
+}
