@@ -8,4 +8,4 @@ React-Js ! :)
 
 # Link
 
-[NoahNotes](https://noahancolie.github.io/NoahNotes/ "This Very Application ! :)")
+[NoahNotes](https://noahancolie.github.io/NoahNotes/)
